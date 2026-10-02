@@ -1,0 +1,33 @@
+{
+  "name": "mcp-flaresolverr",
+  "version": "1.0.0",
+  "description": "MCP server that exposes FlareSolverr's anti-bot bypass capabilities via the Model Context Protocol",
+  "author": {
+    "name": "Marco (Polo) Ornelas",
+    "url": "http://poloornelas.mx"
+  },
+  "type": "module",
+  "bin": {
+    "mcp-flaresolverr": "./dist/index.js"
+  },
+  "exports": "./dist/index.js",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": ["mcp", "flaresolverr", "cloudflare", "proxy"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
