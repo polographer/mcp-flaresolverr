@@ -7,8 +7,16 @@
     "url": "http://poloornelas.mx"
   },
   "type": "module",
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
-    "mcp-flaresolverr": "./dist/index.js"
+    "mcp-flaresolverr": "dist/index.js"
   },
   "exports": "./dist/index.js",
   "main": "./dist/index.js",
@@ -19,7 +27,12 @@
     "test": "vitest run",
     "test:watch": "vitest"
   },
-  "keywords": ["mcp", "flaresolverr", "cloudflare", "proxy"],
+  "keywords": [
+    "mcp",
+    "flaresolverr",
+    "cloudflare",
+    "proxy"
+  ],
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
