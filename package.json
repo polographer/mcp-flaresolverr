@@ -6,6 +6,10 @@
     "name": "Marco (Polo) Ornelas",
     "url": "http://poloornelas.mx"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polographer/mcp-flaresolverr"
+  },
   "type": "module",
   "files": [
     "dist/",
@@ -13,7 +17,8 @@
     "README.md"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "bin": {
     "mcp-flaresolverr": "dist/index.js"
